@@ -8,7 +8,7 @@ image:
   repository: karna9/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "16456061513"
+  tag: "16456316175"
 
 ingress:
   enabled: false
