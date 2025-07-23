@@ -1,68 +1,200 @@
-<Doctype html>
-<html>
-    <head>
-        <title>Contact</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Contact | Maddali Karna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+    header {
+      background-color: #2c3e50;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-            main {
-                padding: 20px;
-            }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
 
-            section {
-                margin-bottom: 20px;
-            }
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
 
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
+    h1 {
+      color: #2980b9;
+    }
 
-        <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background-color: #2980b9;
+    }
+
+    .info {
+      margin-top: 40px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .map {
+      margin-top: 40px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #bdc3c7;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Maddali Karna</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="courses.html">Courses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+    <p>If you have any questions, ideas, or collaboration opportunities, feel free to reach out using the form below or through my social channels.</p>
+
+    <form method="POST" action="#">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="info">
+      <h2>Other Ways to Connect</h2>
+      <p>📧 Email: <strong>karna.devops@gmail.com</strong></p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/maddalikarna" target="_blank">linkedin.com/in/maddalikarna</a></p>
+      <p>🐦 Twitter: <a href="https://twitter.com/karna_devops" target="_blank">@karna_devops</a></p>
+
+      <div class="social-links">
+        <a href="https://github.com/maddalikarna" target="_blank">GitHub</a>
+        <a href="https://www.youtube.com/abhishekVeeramalla/join" target="_blank">Join Slack Channel</a>
+      </div>
+    </div>
+
+    <div class="map">
+      <h2>Location (Optional)</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.183021159201!2d78.38711631487616!3d17.447753688037983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e3fcf2746b%3A0x798087d2a38c240!2sHyderabad!5e0!3m2!1sen!2sin!4v1689000000000"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maddali Karna • DevOps Enthusiast</p>
+  </footer>
+
+</body>
+</html>
