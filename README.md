@@ -202,7 +202,7 @@ Login:
    - Namespace
 
 3. Click **Create** → Argo CD monitors the repo for updates and auto-deploys on changes.
-4. NOw we access the api using this url http://go-web-app.local/courses 
+4. NOw we can access the api using this url http://go-web-app.local/courses 
 
 ---
 
